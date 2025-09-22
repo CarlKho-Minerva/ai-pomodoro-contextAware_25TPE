@@ -1,0 +1,177 @@
+/* Blog post and Pomodoro card specific styling */
+
+/* Blog post styling */
+.blog-post {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.2s ease;
+}
+
+.blog-post:hover {
+    border-color: #58a6ff;
+}
+
+.blog-post h1 {
+    color: #f0f6fc;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.blog-post h2 {
+    color: #f0f6fc;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.8rem 0;
+    line-height: 1.3;
+}
+
+.blog-post h3 {
+    color: #f0f6fc;
+    font-size: 1.1rem;
+    margin: 1.2rem 0 0.6rem 0;
+    line-height: 1.3;
+}
+
+.blog-post p {
+    margin-bottom: 1rem;
+    color: #c9d1d9;
+}
+
+.blog-post ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.blog-post li {
+    margin-bottom: 0.5rem;
+    color: #c9d1d9;
+}
+
+.blog-post a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+.blog-post strong {
+    color: #f0f6fc;
+}
+
+.blog-post em {
+    color: #f0f6fc;
+    font-style: italic;
+}
+
+/* Pomodoro card styling */
+#pomodoro-feed .pomodoro-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+#pomodoro-feed .pomodoro-card:hover {
+    border-color: #555;
+}
+
+#pomodoro-feed .pomodoro-card h1 {
+    font-size: 1rem; /* Smaller than blog titles */
+    color: #f0f6fc;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+#pomodoro-feed .pomodoro-card ul {
+    margin: 0.8rem 0;
+    padding-left: 1.2rem;
+}
+
+#pomodoro-feed .pomodoro-card li {
+    margin-bottom: 0.3rem;
+    color: #c9d1d9;
+    font-size: 0.9rem;
+}
+
+#pomodoro-feed .pomodoro-card details {
+    margin-top: 1rem;
+    border: 1px solid #444;
+    border-radius: 3px;
+    padding: 0.5rem;
+    background-color: #0d1117;
+}
+
+#pomodoro-feed .pomodoro-card summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+    user-select: none;
+}
+
+#pomodoro-feed .pomodoro-card summary:hover {
+    color: #79c0ff;
+}
+
+#pomodoro-feed .pomodoro-card details[open] summary {
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+}
+
+#pomodoro-feed .pomodoro-card details p {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #8b949e;
+    white-space: pre-wrap;
+    margin: 0;
+    background-color: #161b22;
+    padding: 0.5rem;
+    border-radius: 2px;
+    overflow-x: auto;
+}
+
+/* Mobile responsiveness for cards */
+@media (max-width: 768px) {
+    .blog-post,
+    #pomodoro-feed .pomodoro-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog-post h1 {
+        font-size: 1.3rem;
+    }
+
+    #pomodoro-feed .pomodoro-card h1 {
+        font-size: 0.95rem;
+    }
+
+    #pomodoro-feed .pomodoro-card details p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post,
+    #pomodoro-feed .pomodoro-card {
+        padding: 0.8rem;
+        border-radius: 4px;
+    }
+
+    .blog-post h1 {
+        font-size: 1.2rem;
+    }
+
+    #pomodoro-feed .pomodoro-card h1 {
+        font-size: 0.9rem;
+    }
+}
