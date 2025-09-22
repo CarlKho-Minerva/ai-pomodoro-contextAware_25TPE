@@ -3,11 +3,11 @@
 A lightweight, local data-capture tool that integrates AI-summarized output into a portfolio website, displaying a granular feed of work sessions alongside published blog posts.
 
 <div>
-    <a href="https://www.loom.com/share/106c9e405fac44b19ea67f87c2d4ece1">
-      <p>AI Pomodoro - Watch Video</p>
+    <a href="https://www.loom.com/share/58088b77c6b94579a44261fde967a1ae">
+      <p>AI Pomodoro!! - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/106c9e405fac44b19ea67f87c2d4ece1">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/106c9e405fac44b19ea67f87c2d4ece1-a1f0c9b069ae1623-full-play.gif">
+    <a href="https://www.loom.com/share/58088b77c6b94579a44261fde967a1ae">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/58088b77c6b94579a44261fde967a1ae-33feea8c2cb161a6-full-play.gif">
     </a>
   </div>
 
