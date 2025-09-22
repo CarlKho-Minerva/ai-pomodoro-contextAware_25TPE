@@ -2,9 +2,19 @@
 
 A lightweight, local data-capture tool that integrates AI-summarized output into a portfolio website, displaying a granular feed of work sessions alongside published blog posts.
 
+<div>
+    <a href="https://www.loom.com/share/106c9e405fac44b19ea67f87c2d4ece1">
+      <p>AI Pomodoro - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/106c9e405fac44b19ea67f87c2d4ece1">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/106c9e405fac44b19ea67f87c2d4ece1-a1f0c9b069ae1623-full-play.gif">
+    </a>
+  </div>
+
 ## Project Overview
 
 This system consists of three main components:
+
 1. **The Capture Engine** - Local Python script that logs 25-minute work sessions
 2. **The Content Pipeline** - Build script that processes content into HTML
 3. **The Presentation Layer** - Responsive website displaying both blogs and work sessions
@@ -14,12 +24,14 @@ This system consists of three main components:
 ### Phase 1: Capture Work Sessions
 
 1. Install Python dependencies:
+
    ```bash
    cd pomodoro-logger
    pip3 install -r requirements.txt
    ```
 
 2. Start a 25-minute logging session:
+
    ```bash
    ./start_pomodoro.sh
    ```
@@ -42,6 +54,7 @@ This system consists of three main components:
 ### Phase 3: Build Website
 
 1. Run the build script:
+
    ```bash
    npm run build
    # or
@@ -49,6 +62,7 @@ This system consists of three main components:
    ```
 
 2. Open the generated website:
+
    ```bash
    open dist/index.html
    ```
@@ -88,6 +102,7 @@ When processing logs, the AI receives this prompt:
 > 4. Highlight any interesting patterns or insights
 >
 > Format your response as a Markdown file with:
+>
 > - H1 title describing the work session
 > - 3-bullet summary of main activities
 > - `<details>` section containing the raw log for reference
@@ -119,6 +134,7 @@ When processing logs, the AI receives this prompt:
 ## Testing
 
 Test the capture engine with a 60-second session:
+
 ```bash
 cd pomodoro-logger
 python3 test_pomodoro_logger.py

@@ -15,7 +15,7 @@ from pynput import keyboard
 
 # Configuration constants
 SESSION_DURATION_SECONDS = 1500  # 25 minutes
-LOG_FILE_PATH = os.path.expanduser('~/Desktop/PomodoroLogs/')
+LOG_FILE_PATH = os.path.expanduser('/Users/cvk/Downloads/CODELocalProjects/ai-pomodoro_25TPE/PomodoroLogs/')
 POLL_INTERVAL_SECONDS = 2
 
 class PomodoroLogger:
@@ -67,9 +67,10 @@ class PomodoroLogger:
                 # Check active window
                 try:
                     active_window = gw.getActiveWindow()
-                    if active_window and active_window.title:
-                        current_window_title = active_window.title
-                        if current_window_title != self.last_window_title:
+                    if active_window:
+                        current_window_title = str(active_window)
+                        if (current_window_title != self.last_window_title and
+                            current_window_title.strip()):
                             self.add_event('WINDOW_CHANGE', current_window_title)
                             self.last_window_title = current_window_title
                 except Exception:
