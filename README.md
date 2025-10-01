@@ -1,5 +1,7 @@
 # Pomodoro Work Journal System
 
+⚠️ New version with audio and snapshot every 5 minutes approach (for a 25 min sesh coming soon). Email kho@uni.minerva.edu with an ANGRY EMAIL if you want it now.  
+
 A lightweight, local data-capture tool that integrates AI-summarized output into a portfolio website, displaying a granular feed of work sessions alongside published blog posts.
 
 <div>
